@@ -1,7 +1,7 @@
 {
   "name": "myapp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Feel free to delete this and start from scratch.",
   "type": "module",
   "scripts": {
     "start": "node app.js",
@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.19.2"
-  }
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "keywords": []
 }
