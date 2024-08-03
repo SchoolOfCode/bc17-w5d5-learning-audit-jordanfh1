@@ -1,4 +1,7 @@
-1. HTML JS Events
+My notion page in which I evaluated my areas of weakness: https://www.notion.so/Learning-Audit-and-Action-52d21bf0804649bfa692ee8fb3afe9b3?pvs=4
+
+
+<h1>1. HTML JS Events</h1>
 
 Objective: Understand and effectively use JavaScript events to create dynamic web pages.
 
@@ -17,10 +20,10 @@ Action Steps
      - Implement more complex event-driven features like drag-and-drop, real-time form validation, and interactive lists.
      - Resources: Tutorials on JavaScript.info, Eloquent JavaScript (Chapter on Events).
 
-4. Build a Project:
-     - Develop a small interactive web application (e.g., a to-do list, a quiz app) to apply and test your understanding of events.
+4. Recap front end quiz
+     - Test your understanding of events, break it, mess with it, change it.
 
-2. Interactions with a Database through `app.js`
+<h1> 2. Interactions with a Database through `app.js`</h1>
 
 Objective: Master CRUD operations (Create, Read, Update, Delete) by interacting with a database through a Node.js application.
 
@@ -51,7 +54,7 @@ Action Steps:
  Evaluation:
 - Week 8: Deploy your project on a platform like Heroku or Vercel, and gather feedback from users.
 
- 3. RESTful APIs
+ <h1>3. RESTful APIs</h1>
 
 Objective: Gain proficiency in designing, implementing, and consuming RESTful APIs.
 
@@ -77,7 +80,7 @@ Objective: Gain proficiency in designing, implementing, and consuming RESTful AP
      - Implement pagination, filtering, and sorting in your API.
      - Handle file uploads and downloads through your API.
 
- General Tips:
+
 
 - Stay Consistent: Dedicate specific hours each week to learning and practicing.
 - Seek Feedback: Regularly review your code with more experienced developers.

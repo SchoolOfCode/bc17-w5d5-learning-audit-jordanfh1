@@ -1,0 +1,16 @@
+#myBox{
+    width: 10rem;
+    height: 10rem;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 2s, left 2s;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin: 200px;
+}
