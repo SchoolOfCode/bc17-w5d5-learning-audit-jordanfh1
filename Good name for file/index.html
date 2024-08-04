@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API and Database Interaction</title>
+</head>
+<body>
+    <h1>API and Database Interaction</h1>
+    <div>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="value" placeholder="Value">
+        <button onclick="addData()">Add Data</button>
+    </div>
+    <div>
+        <button onclick="fetchData()">Fetch Data</button>
+        <ul id="dataList"></ul>
+    </div>
+    <script>
+        async function fetchData() {
+            const response = await fetch('http://localhost:3000/api/data');
+            const data = await response.json();
+            const dataList = document.getElementById('dataList');
+            dataList.innerHTML = '';
+            data.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = `${item.name}: ${item.value}`;
+                dataList.appendChild(li);
+            });
+        }
+
+        async function addData() {
+            const name = document.getElementById('name').value;
+            const value = document.getElementById('value').value;
+            const response = await fetch('http://localhost:3000/api/data', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, value }),
+            });
+            const result = await response.json();
+            console.log('Data added:', result);
+            fetchData();
+        }
+    </script>
+</body>
+</html>

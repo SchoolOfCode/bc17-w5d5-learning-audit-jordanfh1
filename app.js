@@ -1,4 +1,5 @@
 import express from 'express';
+import helmet from 'helmet';
 
 const app = express();
 const PORT = 4000;
@@ -10,10 +11,11 @@ app.get('/', (req, res) => {
 
 
 
-//creat a delete route that deletes EVERYTHNG
-app.delete('/', (req, res) => {
-    res.send('EVERYTHING DELETED');
-    });
+//creat a delete route that deletes data
+app.delete('/', (req, res)=>{
+    res.send(data)
+})
+
 
 
 //create a put route that updates the data
@@ -21,16 +23,10 @@ app.put('/', (req, res) => {
     res.send('Data updated');
     }   );
 
-    app.post('/', (req, res) => {
+
+app.post('/', (req, res) => {
         res.send('Data updated');
         }   );
-
-
-
-
-
-
-
 
 
 
